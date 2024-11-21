@@ -11,7 +11,7 @@ class SplashViewModel extends BaseViewModel {
   Future<void> runStartupLogic() async {
     await _getAppVersion();
     await Future.delayed(const Duration(seconds: 3));
-    await _navigationService.replaceWith(Routes.homeView);
+    await _navigationService.replaceWith(Routes.mainView);
   }
 
   Future<void> _getAppVersion() async {
