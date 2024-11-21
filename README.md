@@ -1,5 +1,6 @@
-# This branch is still under development
-<img src="badges/IStandWithPalestine.svg" alt="IStandWithPalestine" />
+<img class="center" src="badges/IStandWithPalestine.svg" alt="IStandWithPalestine" style="height:75px; width:1000px;"  />
+<h1>This branch is still under development</h1>
 
 
-Aplikasi seluler Movie App yang dibangun dengan Flutter dan menggunakan State Management Stacked. Aplikasi ini mengkonsumsi API The Movie Database untuk menampilkan informasi film terbaru dan populer. Desain aplikasi terinspirasi dari Figma design oleh Francisco Santos.
+
+Movie App mobile application built with Flutter and using Stacked State Management. The app consumes The Movie Database API to display the latest and popular film information. The app design is inspired by Figma design by Francisco Santos.
