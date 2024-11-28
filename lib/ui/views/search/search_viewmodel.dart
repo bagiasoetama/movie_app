@@ -8,12 +8,10 @@ class SearchViewModel extends BaseViewModel {
   TextEditingController searchController = TextEditingController();
   MovieResponse? movieSearchResponse;
 
-  String searchQuery = "";
-
   Future<void> searchMovie(String query) async {
     setBusy(true);
     try {
-      movieSearchResponse = await _service.fetchSearchMovie(searchQuery);
+      movieSearchResponse = await _service.fetchSearchMovie(query);
       notifyListeners();
     } catch (e) {
       print('Error fetching top movies: $e');

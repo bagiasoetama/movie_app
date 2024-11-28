@@ -46,7 +46,7 @@ class SearchBarField extends StatelessWidget {
           ),
         ),
         onChanged: (query) {
-          viewModel.searchQuery = query;
+          viewModel.searchMovie(query);
         },
       ),
     );
