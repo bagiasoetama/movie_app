@@ -5,7 +5,7 @@ import 'package:movie_app/modules/home/dto/movie_response.dart';
 
 class HomeServices extends ApiService {
   Future<MovieResponse> fetchTopMovie() async {
-    final response = await get('/movie/popular');
+    final response = await get('/trending/movie/week?language=en-US');
 
     if (response.statusCode == 200) {
       final responseData = jsonDecode(response.body);

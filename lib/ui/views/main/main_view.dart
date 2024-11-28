@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/ui/common/app_colors.dart';
 import 'package:movie_app/ui/views/home/home_view.dart';
+import 'package:movie_app/ui/views/search/search_view.dart';
 import 'package:stacked/stacked.dart';
 
 import 'main_viewmodel.dart';
@@ -22,7 +23,7 @@ class MainView extends StackedView<MainViewModel> {
         onPageChanged: (index) => viewModel.setIndex(index),
         children: const [
           HomeView(),
-          HomeView(),
+          SearchView(),
           HomeView(),
         ],
       ),
